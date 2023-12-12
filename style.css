@@ -5,21 +5,35 @@ body {
     margin: 0;
     padding: 0;
      /* Ajoute une image de fond fixe */
-     background-image: url('chemin/vers/ton/image.jpg');
      /* Assure que l'image de fond reste fixe */
      background-attachment: fixed;
      /* Centre l'image de fond et la rend couvrir toute la page */
      background-position: center;
      background-size: cover;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
 
 /* Style de la navbar */
 header {
-    background-color: #333;
+    background-color: #4CAF50; /* Nouvelle couleur pour la navbar (vert) */
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 nav ul {
@@ -36,6 +50,31 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Styles pour la barre de navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    order: 2; /* Met le logo en dernier */
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments de la navbar */
+}
+
+.nav-items li {
+    margin: 0;
+}
+
+.nav-items a {
+    color: #fff;
+    text-decoration: none;
+}
 /* Style du formulaire de connexion */
 .login-form {
     width: 300px;
@@ -75,7 +114,7 @@ nav ul li a {
 
 /* Style du footer */
 footer {
-    background-color: #333;
+    background-color: #4CAF50; /* Nouvelle couleur pour le footer (vert) */
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -89,3 +128,176 @@ footer {
     text-decoration: none;
     margin: 0 10px;
 }
+/* Styles pour la barre de navigation */
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    order: 1;
+    margin-right: auto;
+}
+
+.logo-img {
+    width: 100px; /* Largeur du logo */
+    height: auto; /* Hauteur automatique proportionnelle */
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+/* Styles pour les cartes d'événements */
+.evenements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.carte {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.carte img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.carte h2 {
+    color: #333;
+}
+
+.carte p {
+    color: #666;
+}
+
+
+/* Styles pour les descriptions à l'intérieur des cartes */
+.carte .description {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.carte .description p {
+    margin-bottom: 5px;
+}
+
+/* Styles pour le formulaire de contact */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form textarea {
+    height: 120px;
+}
+
+.form button {
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #555;
+}
+/* Styles généraux */
+
+/* Pour les écrans plus petits que 768px */
+@media screen and (max-width: 768px) {
+    /* Styles pour les écrans plus petits */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    .form label,
+    .form input,
+    .form textarea,
+    .form button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Pour les écrans encore plus petits que 480px */
+@media screen and (max-width: 480px) {
+    /* Styles pour les écrans très petits */
+    .form label,
+    .form input,
+    .form textarea,
+    .form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .options button {
+        margin: 5px;
+        padding: 5px 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+

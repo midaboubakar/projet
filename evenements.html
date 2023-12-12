@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- ... (Balises meta et liens vers les styles CSS) -->
+        <meta charset="UTF-8">
+        <title>Ma Boutique</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Styles pour les cartes d'événements */
+            .evenements {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: stretch;
+            }
+    
+            .carte {
+                width: calc(25% - 40px); /* Chaque carte prend 25% - marge */
+                margin: 20px;
+                padding: 15px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+    
+            .carte img {
+                width: 100%;
+                height: auto;
+                border-radius: 4px;
+                margin-bottom: 10px;
+                transition: transform 0.5s;
+            }
+    
+            .carte h2 {
+                color: #333;
+            }
+    
+            .carte p {
+                color: #666;
+            }
+    
+            /* Effet de zoom au survol */
+            .carte:hover img {
+                transform: scale(1.1);
+            }
+    
+            /* Style pour l'image du logo dans le menu */
+            .logo-img {
+                width: 50px; /* Taille ajustée de l'image du logo */
+                height: auto;
+            }
+        </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="partenariat.html" >partenariat</a></li>
+                <li><a href="galerie.html" >Galerie</a></li>
+                <!--<li><a href="evenements.html" >Événements</a></li>-->
+                <li><a href="contact.html" >Contact</a></li>
+                <link rel="stylesheet" href="style.css">
+                <!--<img src="logoBDE.png" alt="Logo de ta boutique" class="logo-img">-->
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="evenements">
+            <!-- Ajouter les cartes pour chaque événement -->
+            <!-- Répéter pour chaque événement -->
+            <div class="carte">
+                <h2>Événement 1</h2>
+                <img src="affiche1.jpg" alt="Affiche 1">
+                <p>Description de l'événement 1.</p>
+            </div>
+            
+            <div class="carte">
+                <h2>Événement 1</h2>
+                <img src="affiche1.jpg" alt="Affiche 1">
+                <p>Description de l'événement 1.</p>
+            </div>
+            
+            <div class="carte">
+                <h2>Événement 1</h2>
+                <img src="affiche1.jpg" alt="Affiche 1">
+                <p>Description de l'événement 1.</p>
+            </div>
+            
+            <div class="carte">
+                <h2>Événement 1</h2>
+                <img src="affiche1.jpg" alt="Affiche 1">
+                <p>Description de l'événement 1.</p>
+            </div>
+            
+            <div class="carte">
+                <h2>Événement 1</h2>
+                <img src="affiche1.jpg" alt="Affiche 1">
+                <p>Description de l'événement 1.</p>
+            </div>
+            
+            <div class="carte">
+                <h2>Événement 1</h2>
+                <img src="affiche1.jpg" alt="Affiche 1">
+                <p>Description de l'événement 1.</p>
+            </div>
+            
+            <div class="carte">
+                <h2>Événement 1</h2>
+                <img src="affiche1.jpg" alt="Affiche 1">
+                <p>Description de l'événement 1.</p>
+            </div>
+            
+            <div class="carte">
+                <h2>Événement 1</h2>
+                <img src="affiche1.jpg" alt="Affiche 1">
+                <p>Description de l'événement 1.</p>
+            </div>
+
+            <!-- Répéter pour chaque événement -->
+        </section>
+    </main>
+
+    <script>
+        // Fonction de zoom sur l'image au survol
+        const cartes = document.querySelectorAll('.carte');
+        cartes.forEach(carte => {
+            carte.addEventListener('mouseover', function() {
+                const img = this.querySelector('img');
+                img.style.transform = "scale(1.1)";
+            });
+            carte.addEventListener('mouseout', function() {
+                const img = this.querySelector('img');
+                img.style.transform = "scale(1)";
+            });
+        });
+    </script>
+    <footer>
+        <div class="social-media">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            Facebook</a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+                Twitter</a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram</a>
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+                linkedln</a>
+        </div>
+        <p>29 AV. LECLERC,69007 LYON</p>
+    </footer>
+</body>
+</html>
