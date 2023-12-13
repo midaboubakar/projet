@@ -1,61 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- ... (Balises meta et liens vers les styles CSS) -->
-        <meta charset="UTF-8">
-        <title>Ma Boutique</title>
-        <link rel="stylesheet" href="style.css">
-        <style>
-            /* Styles pour les cartes d'événements */
-            .evenements {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-items: stretch;
-            }
-    
-            .carte {
-                width: calc(25% - 40px); /* Chaque carte prend 25% - marge */
-                margin: 20px;
-                padding: 15px;
-                background-color: #f9f9f9;
-                border-radius: 8px;
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-                text-align: center;
-                position: relative;
-                overflow: hidden;
-            }
-    
-            .carte img {
-                width: 100%;
-                height: auto;
-                border-radius: 4px;
-                margin-bottom: 10px;
-                transition: transform 0.5s;
-            }
-    
-            .carte h2 {
-                color: #333;
-            }
-    
-            .carte p {
-                color: #666;
-            }
-    
-            /* Effet de zoom au survol */
-            .carte:hover img {
-                transform: scale(1.1);
-            }
-    
-            /* Style pour l'image du logo dans le menu */
-            .logo-img {
-                width: 50px; /* Taille ajustée de l'image du logo */
-                height: auto;
-            }
-        </style>
+    <meta charset="UTF-8">
+    <title>Ma Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles pour les cartes d'événements */
+        /* ... */
+    </style>
 </head>
 <body>
-     <header>
+    <header>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Accueil</a></li>
@@ -63,70 +18,92 @@
                 <li><a href="galerie.html" >Galerie</a></li>
                 <!--<li><a href="evenements.html" >Événements</a></li>-->
                 <li><a href="contact.html" >Contact</a></li>
-                <link rel="stylesheet" href="style.css">
-                <!--<img src="logoBDE.png" alt="Logo de ta boutique" class="logo-img">-->
-
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="evenements">
-            <!-- Ajouter les cartes pour chaque événement -->
-            <!-- Répéter pour chaque événement -->
-            <div class="carte">
-                <h2>Événement 1</h2>
-                <img src="affiche1.jpg" alt="Affiche 1">
-                <p>Description de l'événement 1.</p>
-            </div>
-            
-            <div class="carte">
-                <h2>Événement 1</h2>
-                <img src="affiche1.jpg" alt="Affiche 1">
-                <p>Description de l'événement 1.</p>
-            </div>
-            
-            <div class="carte">
-                <h2>Événement 1</h2>
-                <img src="affiche1.jpg" alt="Affiche 1">
-                <p>Description de l'événement 1.</p>
-            </div>
-            
-            <div class="carte">
-                <h2>Événement 1</h2>
-                <img src="affiche1.jpg" alt="Affiche 1">
-                <p>Description de l'événement 1.</p>
-            </div>
-            
-            <div class="carte">
-                <h2>Événement 1</h2>
-                <img src="affiche1.jpg" alt="Affiche 1">
-                <p>Description de l'événement 1.</p>
-            </div>
-            
-            <div class="carte">
-                <h2>Événement 1</h2>
-                <img src="affiche1.jpg" alt="Affiche 1">
-                <p>Description de l'événement 1.</p>
-            </div>
-            
-            <div class="carte">
-                <h2>Événement 1</h2>
-                <img src="affiche1.jpg" alt="Affiche 1">
-                <p>Description de l'événement 1.</p>
-            </div>
-            
-            <div class="carte">
-                <h2>Événement 1</h2>
-                <img src="affiche1.jpg" alt="Affiche 1">
-                <p>Description de l'événement 1.</p>
+            <div class="carte evenement-a-venir">
+                <h2>Événement à venir</h2>
+                <img src="/events/A_venir/Afterwork/affiche.png" alt="Affiche 1">
+                <p>Description de l'événement à venir.</p>
             </div>
 
-            <!-- Répéter pour chaque événement -->
+            <div class="carte evenement-passe">
+                <h2>Événement passé</h2>
+                <img src="/events/Passe/SoireeDisco/photos/1.jpg" alt="Affiche 2">
+                <p>Description de l'événement passé.</p>
+            </div>
+
+            <div class="carte evenement-a-venir">
+                <h2>Événement à venir</h2>
+                <img src="/events/A_venir/Bowling/affiche.png" alt="Affiche 3">
+                <p>Description de l'événement à venir.</p>
+            </div>
+
+            <div class="carte evenement-passe">
+                <h2>Événement passé</h2>
+                <img src="/events/Passe/TournoiEchecs/affiche.png" alt="Affiche 4">
+                <p>Description de l'événement passé.</p>
+            </div>
+            <div class="carte evenement-a-venir">
+                <h2>Événement à venir</h2>
+                <img src="/events/A_venir/Karaoke/affiche.png" alt="Affiche 1">
+                <p>Description de l'événement à venir.</p>
+            </div>
+
+            <div class="carte evenement-passe">
+                <h2>Événement passé</h2>
+                <img src="/events/Passe/TournoiFoot/affiche.png" alt="Affiche 2">
+                <p>Description de l'événement passé.</p>
+            </div>
+
+            <div class="carte evenement-a-venir">
+                <h2>Événement à venir</h2>
+                <img src="/events/A_venir/NouvelAn/affiche.png" alt="Affiche 3">
+                <p>Description de l'événement à venir.</p>
+            </div>
+
+            <div class="carte evenement-passe">
+                <h2>Événement passé</h2>
+                <img src="/events/Passe/TournoiLol/affiche.png" alt="Affiche 4">
+                <p>Description de l'événement passé.</p>
+            </div>
+
+            <div class="carte evenement-a-venir">
+                <h2>Événement à venir</h2>
+                <img src="/events/A_venir/SoireeDJ/affiche.png" alt="Affiche 1">
+                <p>Description de l'événement à venir.</p>
+            </div>
+
+            <div class="carte evenement-passe">
+                <h2>Événement passé</h2>
+                <img src="/events/Passe/VenteCrepes/affiche.png" alt="Affiche 2">
+                <p>Description de l'événement passé.</p>
+            </div>
         </section>
     </main>
 
     <script>
+        // Sélection des événements à venir
+        const evenementsAVenir = document.querySelectorAll('.evenement-a-venir');
+        
+        // Sélection des événements passés
+        const evenementsPasses = document.querySelectorAll('.evenement-passe');
+
+        // Masquer les événements passés
+        evenementsPasses.forEach(function(evenement) {
+            evenement.style.display = 'none';
+        });
+
+        // Appliquer un style différent aux événements à venir
+        evenementsAVenir.forEach(function(evenement) {
+            evenement.style.backgroundColor = '#f0f0f0';
+            evenement.style.border = '2px solid #ccc';
+            // ... Autres styles pour les événements à venir
+        });
+
         // Fonction de zoom sur l'image au survol
         const cartes = document.querySelectorAll('.carte');
         cartes.forEach(carte => {
@@ -140,22 +117,27 @@
             });
         });
     </script>
+    
     <footer>
         <div class="social-media">
             <a href="#">
                 <i class="fa-brands fa-facebook-f"></i>
-            Facebook</a>
+                Facebook
+            </a>
             <a href="#">
                 <i class="fa-brands fa-twitter"></i>
-                Twitter</a>
+                Twitter
+            </a>
             <a href="#">
                 <i class="fa-brands fa-instagram"></i>
-                Instagram</a>
+                Instagram
+            </a>
             <a href="#">
                 <i class="fa-brands fa-linkedin"></i>
-                linkedln</a>
+                LinkedIn
+            </a>
         </div>
-        <p>29 AV. LECLERC,69007 LYON</p>
+        <p>29 AV. LECLERC, 69007 LYON</p>
     </footer>
 </body>
 </html>

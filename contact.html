@@ -21,7 +21,7 @@
         }
 
         header {
-            background-color: #00b300;
+            background: #6f00ff;
             color: white;
             padding: 15px;
             text-align: center;
@@ -50,12 +50,12 @@
 
         nav ul li a:hover {
             text-decoration: underline;
-            color: #008000; /* Couleur au survol */
+            background: #ff7f00;
             font-size: 20px; /* Taille de police au survol */
         }
 
         footer {
-            background-color: #00b300;
+            background: #6f00ff;
             color: white;
             text-align: center;
             padding: 10px;
@@ -63,6 +63,7 @@
             bottom: 0;
             width: 100%;
         }
+        
 
         .social-media a {
             color: white;
@@ -71,7 +72,7 @@
         }
         /* Style pour le bouton "Envoyer" */
         .form button {
-            background-color: #008000; /* Couleur verte plus foncée */
+            background: #6f00ff;;
             color: white;
             border: none;
             border-radius: 5px;
@@ -82,14 +83,14 @@
         }
 
         .form button:hover {
-            background-color: #006400; /* Couleur verte plus foncée au survol */
+            background: #ff7f00;
         }
 
         /* Styles pour les boutons des sujets */
         .options button {
             margin: 5px;
             padding: 8px 15px;
-            background-color: #00b300;
+            background: linear-gradient(180deg, rgba(23, 30, 198, 0.62) 0%, #7C50A9 86.98%);
             color: white;
             border: none;
             border-radius: 5px;
@@ -119,7 +120,7 @@
         .object {
             width: 150px;
             height: 150px;
-            background-color: #00b300;
+            background: linear-gradient(180deg, rgba(23, 30, 198, 0.62) 0%, #7C50A9 86.98%);
             color: white;
             text-align: center;
             line-height: 150px;
@@ -128,6 +129,57 @@
             cursor: pointer;
         }
         /* ... (Vos autres styles) */
+
+
+        /* ... (Vos autres styles) */
+
+    .form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form label {
+        display: block;
+        margin-bottom: 5px;
+        color: #6f00ff;
+    }
+
+    .form input[type="text"],
+    .form input[type="email"],
+    .form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .form textarea {
+        height: 100px;
+    }
+
+    .form button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #6f00ff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .form button:hover {
+        background-color: #7C50A9;
+    }
     </style>
 </head>
 
@@ -161,16 +213,18 @@
 
             <button type="submit">Envoyer</button>
         </form>
-
-        <div class="options">
+        <!--
+             <div class="options">
             <button>Sujet 1</button>
             <button>Sujet 2</button>
             <button>Sujet 3</button>
             <button>Sujet 4</button>
             <button>Sujet 5</button>
             <button>Sujet 6</button>
-            <!-- Ajoutez d'autres options ici -->
+             Ajoutez d'autres options ici -->
         </div>
+        
+       
     </main>
 
     <footer>
