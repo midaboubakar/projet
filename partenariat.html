@@ -6,212 +6,6 @@
     <title>Boutique</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        /* Styles pour les cartes de partenariats */
-        .partenaires {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: stretch;
-        }
-        .carte-partenaire img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    transition: transform 0.5s; /* Ajout de la transition */
-}
-
-
-        .carte-partenaire {
-            width: 300px;
-            margin: 20px;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .carte-partenaire img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 10px;
-            transition: transform 0.5s;
-        }
-
-        .carte-partenaire .info {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            opacity: 0;
-            transition: opacity 0.5s;
-            text-align: center;
-        }
-
-        .carte-partenaire:hover .info {
-            opacity: 1;
-        }
-         /* Styles pour les cartes de partenariats */
-        .partenaires {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: stretch;
-        }
-
-        .categorie {
-            display: flex; /* Affichage en flexbox */
-            flex-wrap: nowrap; /* Pour rester sur une seule ligne */
-            overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
-            margin-bottom: 20px;
-        }
-
-        .carte-partenaire {
-            width: 300px;
-            margin: 20px;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .carte-partenaire img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 10px;
-            transition: transform 0.5s;
-        }
-
-        .carte-partenaire .info {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            opacity: 0;
-            transition: opacity 0.5s;
-            text-align: center;
-        }
-        .carte-partenaire:hover .info {
-            opacity: 1;
-        }
-
-        .categorie h3 {
-            text-align: center;
-        }
-        /* Styles pour les cartes de partenariats */
-        .partenaires {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: stretch;
-        }
-
-        .categorie {
-            display: flex; /* Affichage en flexbox */
-            flex-wrap: nowrap; /* Pour rester sur une seule ligne */
-            overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
-            margin-bottom: 20px;
-        }
-
-        .carte-partenaire {
-            width: 300px;
-            margin: 20px;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .carte-partenaire img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 10px;
-            transition: filter 0.5s;
-        }
-
-        .carte-partenaire:hover img {
-            filter: grayscale(100%) contrast(1) brightness(80%);
-        }
-
-        .carte-partenaire .info {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            opacity: 0;
-            transition: opacity 0.5s;
-            text-align: center;
-        }
-
-        .carte-partenaire:hover .info {
-            opacity: 1;
-        }
-
-        .categorie h2 {
-            text-align: center;
-        }
-
-        /* Ajout des styles pour les h3 */
-        .categorie .carte-partenaire .info h3 {
-            text-align: center;
-            color: white; /* Couleur initiale */
-        }
-
-        /* Changement de couleur au survol */
-        .categorie .carte-partenaire:hover .info h3 {
-            color: black; /* Couleur au survol */
-        }
-        
-        /* Effet de rotation et d'écriture lors du hover sur les informations */
-        .carte-partenaire .info {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            opacity: 0;
-            transition: opacity 0.5s, transform 0.5s;
-            text-align: center;
-            transform-origin: center;
-        }
-
-        .carte-partenaire:hover .info {
-            opacity: 1;
-            transform: translate(-50%, -50%) rotate(45deg) scale(1.1);
-        }
-
-        .carte-partenaire:hover img {
-            filter: grayscale(100%) contrast(1) brightness(80%);
-        }
-
-        /* Ajout des styles pour les h3 */
-        .categorie .carte-partenaire .info h3 {
-            text-align: center;
-            color: white;
-            transition: color 0.5s;
-        }
-
-        /* Changement de couleur au survol */
-        .categorie .carte-partenaire:hover .info h3 {
-            color: black;
-        }
-    </style>
 </head>
 
 <body>
@@ -268,28 +62,45 @@
                     <img src="/partenaires/Divertissement/MEGAZONE.jpg" alt="Divertissement 1">
                     <div class="info">
                         <h3>MEGAZONE</h3>
-                        <p>Équipé de votre gilet électronique et d’un pistolet laser, vous évoluez dans un labyrinthe de 650 m² sur 2 étages, conçu pour vous divertir ! Soyez bon tireur et tentez de faire le meilleur score en 20 minutes en désactivant vos adversaires et en attaquant leur base. Tirez sur les cibles disséminées dans l’aire de jeu pour gagner des pouvoirs et n'hésitez pas à activer le fusil à pompe lors des échanges de tirs au contact ! L’équipe qui marquera le plus de points l’emportera et chacun recevra une carte de score établissant un bilan complet de la partie (classement, touches effectuées ou reçues, précision de tir, etc...) Selon vos envies, nous vous proposons plus de 40 modes de jeu : équipe ou solo, battle royale, infection, capture, etc.</p>
+                        <p>Équipé de votre gilet électronique et d’un pistolet laser, vous évoluez dans
+                             un labyrinthe de 650 m² sur 2 étages, conçu pour vous divertir ! Soyez bon
+                              tireur et tentez de faire le meilleur score en 20 minutes en désactivant
+                               vos adversaires et en attaquant leur base. Tirez sur les cibles disséminées 
+                               dans l’aire de jeu pour gagner des pouvoirs et n'hésitez pas à activer le fusil
+                                à pompe lors des échanges de tirs au contact ! L’équipe qui marquera le plus 
+                                de points l’emportera et chacun recevra une carte de score établissant un bilan 
+                                complet de la partie (classement, touches effectuées ou reçues, précision de tir, etc...) 
+                                Selon vos envies, nous vous proposons plus de 40 modes de jeu : équipe ou solo, battle royale,
+                                 infection, capture, etc.
+                        </p>
                     </div>
                 </div>
                 <div class="carte-partenaire">
                     <img src="/partenaires/Divertissement/MICROMANIA.jpg" alt="Divertissement 2">
                     <div class="info">
                         <h3>MICROMANIA</h3>
-                        <p>Description du Divertissement 2.</p>
+                        <p>Pénétrez dans l'univers Micromania-Zing, et faites l'expérience de la 
+                            Pop Culture ! Dans ce magasin, un mur de 350 Figurines Pop ! à découvrir,
+                             avec plus de 56 licences disponibles sur place. Micromania-Zing, c'est
+                              plus de 400 magasins en France totalement dédiés à l'univers du jeu vidéo !
+                        </p>
                     </div>
                 </div>
                 <div class="carte-partenaire">
                     <img src="/partenaires/Divertissement/MOMIE.png" alt="Divertissement 1">
                     <div class="info">
-                        <h3>MEGAZONE</h3>
-                        <p>Description du Divertissement 1.</p>
+                        <h3>MOMIE</h3>
+                        <p>Située dans la presqu'ile de Lyon, à côté de la gare Perrache, la Librairie Momie est spécialisée en bandes dessinées, comics, mangas et jeunesse !</p>
                     </div>
                 </div>
                 <div class="carte-partenaire">
                     <img src="/partenaires/Divertissement/OVRDOZE.png" alt="Divertissement 2">
                     <div class="info">
-                        <h3>MICROMANIA</h3>
-                        <p>Description du Divertissement 2.</p>
+                        <h3>OVRDOZE</h3>
+                        <p>oVRdoze, Quésaco? C'est une salle de réalité virtuelle à Lyon où vous recevez votre dose d'adrénaline, de rire et d'émerveillement.
+                             Si vous ne connaissez pas la réalité virtuelle, la définir est tout simple : C'est des voyages dans le temps, dans l'espace, dans 
+                             l'imaginaire..
+                        </p>
                     </div>
                 </div>
                 <!-- Ajoute d'autres partenaires de la catégorie Divertissement ici -->
@@ -302,28 +113,38 @@
                     <img src="/partenaires/Nourriture/CARREFOUR.png" alt="Nourriture 1">
                     <div class="info">
                         <h3>CARREFOUR</h3>
-                        <p>Description de la Nourriture 1.</p>
+                        <p>Proposer à ses clients des services, des produits et une alimentation de qualité et accessibles à tous à travers l'ensemble des canaux de distribution</p>
                     </div>
                 </div>
                 <div class="carte-partenaire">
                     <img src="/partenaires/Nourriture/DOMINOS_PIZZA.png" alt="Nourriture 2">
                     <div class="info">
                         <h3>DOMINOS PIZZAS</h3>
-                        <p>Description de la Nourriture 2.</p>
+                        <p>Vous avez une faim de loup ? Commandez le plat qui vous correspond chez Domino’s ! À Lyon,
+                            Domino’s Pizza est là pour vous servir. Pour un petit creux où pour une grosse faim, votre 
+                            pizzeria préférée vous livre où que vous soyez, chez vous ou au bureau.
+                        </p>
                     </div>
                 </div>
                 <div class="carte-partenaire">
                     <img src="/partenaires/Nourriture/KAMON_SHOTEN.png" alt="Nourriture 1">
                     <div class="info">
-                        <h3>CARREFOUR</h3>
-                        <p>Description de la Nourriture 1.</p>
+                        <h3>KAMON_SHOTEN</h3>
+                        <p>Ouvert début 2023 à Lyon Perrache, ce café qui fait également office de librairie
+                             sur le thème du Japon va ravir les fadas de mangas et de bandes dessinées japonaises
+                              ainsi que les grands curieux qui ne demandent qu'à découvrir ce nouvel univers !
+                        </p>
                     </div>
                 </div>
                 <div class="carte-partenaire">
                     <img src="/partenaires/Nourriture/MCDO.png" alt="Nourriture 2">
                     <div class="info">
-                        <h3>DOMINOS PIZZAS</h3>
-                        <p>Description de la Nourriture 2.</p>
+                        <h3>MCDO</h3>
+                        <p>Pour toutes les faims, tous les goûts, tous les âges et tous les budgets, découvrez
+                            les menus McDonald’s ! Plutôt menu burger ou menu salade ? Ou peut-être souhaitez-vous
+                            prendre un bon petit-déjeuner avec l’offre P’tit dej’ ? Les enfants ne sont pas oubliés :
+                            le menu enfant Happy Meal™ inclut un dessert fruité ainsi qu’un jouet ou un livre.
+                        </p>
                     </div>
                 </div>
                 <!-- Ajoute d'autres partenaires de la catégorie Nourriture ici -->
@@ -335,28 +156,32 @@
                     <img src="/partenaires/Sport/ALL_IN_PADEL.jpg" alt="Sport 1">
                     <div class="info">
                         <h3>ALL IN PADEL</h3>
-                        <p>Description du Sport 1.</p>
+                        <p>Le padel est un sport de raquette qui se joue toujours en double sur un court fermé.
+                            C'est une sorte de mélange entre le tennis et le squash où la balle peut rebondir 
+                            sur le mur de verre ou le treillis métallique qui entoure le court. Un jeu de padel 
+                            est généralement joué en plein air.
+                        </p>
                     </div>
                 </div>
                 <div class="carte-partenaire">
                     <img src="/partenaires/Sport/ASVEL.png" alt="Sport 2">
                     <div class="info">
                         <h3>ASVEL</h3>
-                        <p>Description du Sport 2.</p>
+                        <p>L'ASVEL Lyon-Villeurbanne (ASVEL) est un club français de basket-ball situé à Villeurbanne nommé officiellement, pour raison de parrainage, LDLC ASVEL depuis 2018.</p>
                     </div>
                 </div>
                 <div class="carte-partenaire">
                     <img src="/partenaires/Sport/CLIMB_UP.png" alt="Sport 1">
                     <div class="info">
                         <h3>CLIMB_UP</h3>
-                        <p>Description du Sport 1.</p>
+                        <p>Le groupe Climb Up est le plus grand réseau de salles d'escalade. Climb Up propose des salles d'escalade de blocs / voies / vitesse partout en France.</p>
                     </div>
                 </div>
                 <div class="carte-partenaire">
                     <img src="/partenaires/Sport/LOU.png" alt="Sport 2">
                     <div class="info">
                         <h3>LOU</h3>
-                        <p>Description du Sport 2.</p>
+                        <p>Un joueur est désigné comme le loup et doit alors courir après les autres joueurs jusqu'à ce qu'il réussisse à en toucher un, qui devient alors le loup.</p>
                     </div>
                 </div>
                 <!-- Ajoute d'autres partenaires de la catégorie Sport ici -->
@@ -374,10 +199,9 @@
                 <i class="fa-brands fa-twitter"></i>
                 Twitter
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/bde.estiam_lyon/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
-                Instagram
-            </a>
+                Instagram</a>
             <a href="#">
                 <i class="fa-brands fa-linkedin"></i>
                 LinkedIn
