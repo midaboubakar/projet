@@ -325,9 +325,9 @@ transition: transform 0.5s; /* Ajout de la transition */
             transition: transform 0.5s ease; /* Ajout de transition pour la rotation */
         }
 
-.carte-partenaire:hover img {
-    transform: scale(1.1) rotate(45deg); /* Rotation et agrandissement au survol */
-}
+/* .carte-partenaire:hover img {
+    transform: scale(1.1) rotate(45deg);  Rotation et agrandissement au survol */
+
 
 .carte-partenaire .info {
     /* ... (Styles existants) ... */
@@ -336,7 +336,7 @@ transition: transform 0.5s; /* Ajout de la transition */
 
 .carte-partenaire:hover .info {
     opacity: 1;
-    color: black; /* Couleur du texte au survol */
+    /* color: black;  Couleur du texte au survol */
 }
 
 
@@ -350,82 +350,12 @@ transition: transform 0.5s; /* Ajout de la transition */
     text-align: center;
     position: relative;
     overflow: hidden;
-}
-
-.carte-partenaire img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    transition: transform 0.5s;
-}
-
-.carte-partenaire .info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.5s;
-    text-align: center;
 }
 
 .carte-partenaire:hover .info {
     opacity: 1;
 }
  /* Styles pour les cartes de partenariats */
-.partenaires {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
-.categorie {
-    display: flex; /* Affichage en flexbox */
-    flex-wrap: nowrap; /* Pour rester sur une seule ligne */
-    overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
-    margin-bottom: 20px;
-}
-
-.carte-partenaire {
-    width: 300px;
-    margin: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.carte-partenaire img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    transition: transform 0.5s;
-}
-
-.carte-partenaire .info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.5s;
-    text-align: center;
-}
-.carte-partenaire:hover .info {
-    opacity: 1;
-}
-
-.categorie h3 {
-    text-align: center;
-}
 /* Styles pour les cartes de partenariats */
 .partenaires {
     display: flex;
@@ -434,6 +364,13 @@ transition: transform 0.5s; /* Ajout de la transition */
     align-items: stretch;
 }
 
+
+.carte-partenaire:hover .info {
+    opacity: 1;
+}
+
+
+
 .categorie {
     display: flex; /* Affichage en flexbox */
     flex-wrap: nowrap; /* Pour rester sur une seule ligne */
@@ -445,7 +382,8 @@ transition: transform 0.5s; /* Ajout de la transition */
     width: 300px;
     margin: 20px;
     padding: 15px;
-    background-color: #f9f9f9;
+    margin-top: 100px;
+    background-color: #d5cad8;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -458,31 +396,28 @@ transition: transform 0.5s; /* Ajout de la transition */
     height: auto;
     border-radius: 4px;
     margin-bottom: 10px;
-    transition: filter 0.5s;
+    transition: transform 0.5s;
 }
 
-.carte-partenaire:hover img {
-    filter: grayscale(100%) contrast(1) brightness(80%);
-}
+
+
 
 .carte-partenaire .info {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    font-weight: bold;
+    font-size: x-large;
+    color: red;
+    background-color: #f9f9f9;
     opacity: 0;
     transition: opacity 0.5s;
     text-align: center;
+    font-size: x-large;
 }
 
-.carte-partenaire:hover .info {
-    opacity: 1;
-}
 
-.categorie h2 {
-    text-align: center;
-}
 
 /* Ajout des styles pour les h3 */
 .categorie .carte-partenaire .info h3 {
@@ -490,31 +425,10 @@ transition: transform 0.5s; /* Ajout de la transition */
     color: white; /* Couleur initiale */
 }
 
-/* Changement de couleur au survol */
-.categorie .carte-partenaire:hover .info h3 {
-    color: black; /* Couleur au survol */
-}
 
-/* Effet de rotation et d'écriture lors du hover sur les informations */
-.carte-partenaire .info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.5s, transform 0.5s;
-    text-align: center;
-    transform-origin: center;
-}
-
-.carte-partenaire:hover .info {
-    opacity: 1;
-    transform: translate(-50%, -50%) rotate(45deg) scale(1.1);
-}
 
 .carte-partenaire:hover img {
-    filter: grayscale(100%) contrast(1) brightness(80%);
+    filter: blur(2px) brightness(80%);
 }
 
 /* Ajout des styles pour les h3 */
@@ -528,38 +442,11 @@ transition: transform 0.5s; /* Ajout de la transition */
 .categorie .carte-partenaire:hover .info h3 {
     color: black;
 }
-
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    /*background: linear-gradient(180deg, #233ECF 0%, rgba(107, 51, 215, 0.26) 99.99%, rgba(132, 47, 217, 0.00) 100%);*/
-     /* Ajoute une image de fond fixe */
-     /* Assure que l'image de fond reste fixe */
-     background-attachment: fixed;
-     /* Centre l'image de fond et la rend couvrir toute la page */
-     background-position: center;
-     background-size: cover;
+.categorie>h2{
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#background-video {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    }
 
 /* Style de la navbar */
 header {
